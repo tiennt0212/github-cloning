@@ -1,0 +1,1462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <svg
+        class="github-logo"
+        width="32"
+        height="32"
+        viewBox="0 0 32 32"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M16 0.5C24.84 0.5 32 7.66 32 16.5C31.9991 19.8524 30.947 23.1201 28.9917 25.8432C27.0364 28.5664 24.2763 30.6077 21.1 31.68C20.3 31.84 20 31.34 20 30.92C20 30.38 20.02 28.66 20.02 26.52C20.02 25.02 19.52 24.06 18.94 23.56C22.5 23.16 26.24 21.8 26.24 15.66C26.24 13.9 25.62 12.48 24.6 11.36C24.76 10.96 25.32 9.32 24.44 7.12C24.44 7.12 23.1 6.68 20.04 8.76C18.76 8.4 17.4 8.22 16.04 8.22C14.68 8.22 13.32 8.4 12.04 8.76C8.98 6.7 7.64 7.12 7.64 7.12C6.76 9.32 7.32 10.96 7.48 11.36C6.46 12.48 5.84 13.92 5.84 15.66C5.84 21.78 9.56 23.16 13.12 23.56C12.66 23.96 12.24 24.66 12.1 25.7C11.18 26.12 8.88 26.8 7.44 24.38C7.14 23.9 6.24 22.72 4.98 22.74C3.64 22.76 4.44 23.5 5 23.8C5.68 24.18 6.46 25.6 6.64 26.06C6.96 26.96 8 28.68 12.02 27.94C12.02 29.28 12.04 30.54 12.04 30.92C12.04 31.34 11.74 31.82 10.94 31.68C7.75328 30.6193 4.98147 28.582 3.01778 25.8573C1.05409 23.1325 -0.00176096 19.8586 2.20462e-06 16.5C2.20462e-06 7.66 7.16 0.5 16 0.5Z"
+          fill="#24292F"
+        />
+      </svg>
+      <svg
+        class="three-bars"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 16 16"
+        width="16"
+        height="16"
+      >
+        <path
+          d="M1 2.75A.75.75 0 0 1 1.75 2h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 2.75Zm0 5A.75.75 0 0 1 1.75 7h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 7.75ZM1.75 12h12.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5Z"
+        ></path>
+      </svg>
+      <nav>
+        <ul>
+          <li>
+            <button>Product</button>
+          </li>
+          <li><button>Solutions</button></li>
+          <li><button>Open Source</button></li>
+          <li><a href="#">Pricing</a></li>
+        </ul>
+      </nav>
+      <input type="search" placeholder="Search Github" />
+      <button class="sign-in">Sign in</button>
+      <button class="sign-up">Sign up</button>
+    </header>
+    <main>
+      <section class="plan-types">
+        <h2>Get the complete developer platform.</h2>
+        <p>How often do you want to pay?</p>
+        <div>
+          <input
+            type="radio"
+            name="billing_cycle"
+            id="cycle_monthly"
+            value="monthly"
+          />
+          <label for="cycle_monthly">Monthly</label>
+          <input
+            type="radio"
+            name="billing_cycle"
+            id="cycle_yearly"
+            value="yearly"
+          />
+          <label for="cycle_yearly"> Yearly </label>
+        </div>
+        <ul class="plans-list">
+          <li>
+            <article class="plan-free">
+              <h3>Free</h3>
+              <p>The basics for individuals<br />and organizations</p>
+              <p class="cost"><sup>$</sup><span class="value">0</span></p>
+              <p class="cycle">permonth<br />forever</p>
+              <div class="action">
+                <button>Join for free</button>
+              </div>
+              <div class="details">
+                <ul>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong>Unlimited public/private repositories</strong>
+                      </summary>
+                      <p>
+                        Host open source projects in public GitHub repositories,
+                        accessible via web or command line. Public repositories
+                        are accessible to anyone at GitHub.com.
+                      </p>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong>Automatic security and version updates</strong>
+                      </summary>
+                      <p>
+                        Keep projects secure by automatically opening pull
+                        requests that update vulnerable dependencies to secure
+                        versions, and update out-of-date dependencies.
+                      </p>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong>2,000 CI/CD minutes/month</strong>
+                        <small>Free for public repositories</small>
+                      </summary>
+                      <p>
+                        Use execution minutes with GitHub Actions to automate
+                        your software development workflows. Write tasks and
+                        combine them to build, test, and deploy any code project
+                        on GitHub.
+                      </p>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong>500MB of Packages storage</strong>
+                        <small>Free for public repositories</small>
+                      </summary>
+                      <p>
+                        Host your own software packages or use them as
+                        dependencies in other projects. Both private and public
+                        hosting available.
+                      </p>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong>New issues & projects (in limited beta)</strong>
+                      </summary>
+                      <p>
+                        Give your developers flexible features for project
+                        management that adapts to any team, project, and
+                        workflow — all alongside your code.
+                      </p>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong>Community support</strong>
+                      </summary>
+                      <p>
+                        Get help with most of your GitHub questions and issues
+                        in our Community Forum.
+                      </p>
+                    </details>
+                  </li>
+                </ul>
+                <h4>FEATURED ADD-ONS</h4>
+                <ul>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong>GitHub Copilot Access</strong>
+                      </summary>
+                      <p>
+                        With <a href="#">GitHub Copilot</a>, get suggestions for
+                        whole lines or entire functions—right inside your
+                        editor.
+                      </p>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong>GitHub Codespaces Access</strong>
+                      </summary>
+                      <p>
+                        With <a href="#">GitHub Codespaces</a>, get an instant
+                        dev environment in the cloud, so you can code anywhere
+                        on any device.
+                      </p>
+                    </details>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="plan-team">
+              <h3>Team</h3>
+              <p>
+                Advanced collaboration for<br />individuals and organizations
+              </p>
+              <p class="cost">
+                <del> <sup>$</sup><span>4</span> </del>
+                <ins>
+                  <sup>$</sup>
+                  <span class="value">3.67</span>
+                </ins>
+              </p>
+              <p class="cycle">
+                per user/month<br />for the first 12 months <sup>*</sup>
+              </p>
+              <div class="action">
+                <button>Continue with Team</button>
+              </div>
+              <div class="details">
+                <p><span>&lt;</span> Everything included in Free, plus...</p>
+                <ul>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong>Access to GitHub Codespaces</strong>
+                      </summary>
+                      <p>
+                        Blazing fast cloud developer environments with flexible
+                        compute and pre-configured containers, developers can
+                        code, collaborate, and debug from any browser. Pay only
+                        for what you use with compute fees starting at $0.18/hr
+                        and storage fees at $0.07/GB per month.
+                      </p>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong>Protected branches</strong>
+                      </summary>
+                      <p>
+                        Enforce restrictions on how code branches are merged,
+                        including requiring reviews by selected collaborators,
+                        or allowing only specific contributors to work on a
+                        particular branch.
+                      </p>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong>Multiple reviewers in pull requests</strong>
+                      </summary>
+                      <p>
+                        Assign multiple users or a team to review a pull
+                        request.
+                      </p>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong>Draft pull requests</strong>
+                      </summary>
+                      <p>
+                        Easily discuss and collaborate on pull requests before
+                        submitting to formal review.
+                      </p>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong>Code owners</strong>
+                      </summary>
+                      <p>
+                        Automatically request reviews—or require approval—by
+                        selected contributors when changes are made to sections
+                        of code that they own.
+                      </p>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong>Required reviewers</strong>
+                      </summary>
+                      <p>
+                        Ensure that pull requests have a specific number of
+                        approving reviews before collaborators can make changes
+                        to a protected branch.
+                      </p>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong>Pages and Wikis</strong>
+                      </summary>
+                      <p>
+                        Host documentation and simple websites for your project
+                        in a wiki format that contributors can easily edit
+                        either on the web or command line.
+                      </p>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong
+                          >Environment deployment branches and secrets</strong
+                        >
+                      </summary>
+                      <p>
+                        A job cannot access secrets that are defined in an
+                        environment unless it is running on the specified
+                        branch.
+                      </p>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong>3,000 CI/CD minutes/month</strong>
+                        <small>Free for public repositories</small>
+                      </summary>
+                      <p>
+                        Use execution minutes with GitHub Actions to automate
+                        your software development workflows. Write tasks and
+                        combine them to build, test, and deploy any code project
+                        on GitHub.
+                      </p>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong>2GB of Packages storage</strong>
+                        <small>Free for public repositories</small>
+                      </summary>
+                      <p>
+                        Host your own software packages or use them as
+                        dependencies in other projects. Both private and public
+                        hosting available.
+                      </p>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong>Web-based support</strong>
+                      </summary>
+                      <p>
+                        GitHub Support can help you troubleshoot issues you run
+                        into while using GitHub. Enterprise Security,
+                        compliance, and flexible deployment $ 21 per user/month
+                        Everything included in Team, plus... EXCLUSIVE ADD-ONS
+                      </p>
+                    </details>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="plan-enterprise">
+              <h3>Enterprise</h3>
+              <p>Security, compliance,<br />and flexible deployment</p>
+              <p class="cost">
+                <del> <sup>$</sup><span>21</span> </del>
+                <ins>
+                  <sup>$</sup>
+                  <span class="value">19.25</span>
+                </ins>
+              </p>
+              <p class="cycle">
+                per user/month<br />for the first 12 months <sup>*</sup>
+              </p>
+              <div class="action">
+                <button>Start a free trial</button>
+                <button>Contact Sales</button>
+              </div>
+              <div class="details">
+                <p><span>&lt;</span> Everything included in Team, plus...</p>
+                <ul>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong>Enterprise Managed Users</strong>
+                      </summary>
+                      <p>
+                        Own and control the user accounts of your enterprise
+                        members through your identity provider (IdP).
+                      </p>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong>User provisioning through SCIM</strong>
+                      </summary>
+                      <p>
+                        Automatically invite members to join your organization
+                        when you grant access on your IdP. If you remove a
+                        member's access to your GitHub organization on your SAML
+                        IdP, the member will be automatically removed from the
+                        GitHub organization.
+                      </p>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong
+                          >Enterprise Account to centrally manage multiple
+                          organizations</strong
+                        >
+                      </summary>
+                      <p>
+                        GitHub Enterprise Cloud includes the option to create an
+                        enterprise account, which enables collaboration between
+                        multiple organizations, gives administrators a single
+                        point of visibility and management and brings license
+                        cost savings for identical users in multiple
+                        organizations.
+                      </p>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong>Environment protection rules</strong>
+                      </summary>
+                      <p>
+                        When a workflow job references an environment, the job
+                        won't start until all of the environment's protection
+                        rules pass.
+                      </p>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong>Audit Log API</strong>
+                      </summary>
+                      <p>
+                        As a GitHub Enterprise Cloud organization administrator,
+                        you can now access log events using our GraphQL API and
+                        monitor the activity in your organization.
+                      </p>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong>SOC1, SOC2, type 2 reports annually</strong>
+                      </summary>
+                      <p>
+                        GitHub offers AICPA System and Organization Controls
+                        (SOC) 1 Type 2 and SOC 2 Type 2 reports with IAASB
+                        International Standards on Assurance Engagements, ISAE
+                        3000, and ISAE 3402.
+                      </p>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong
+                          >FedRAMP Tailored Authority to Operate (ATO)</strong
+                        >
+                      </summary>
+                      <p>
+                        Government users can host projects on GitHub Enterprise
+                        Cloud with the confidence that our platform meets the
+                        low impact software-as-a-service (SaaS) baseline of
+                        security standards set by our U.S. federal government
+                        partners.
+                      </p>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong>SAML single sign-on</strong>
+                      </summary>
+                      <p>
+                        Use an identity provider to manage the identities of
+                        GitHub users and applications.
+                      </p>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong>Advanced auditing</strong>
+                      </summary>
+                      <p>
+                        Quickly review the actions performed by members of your
+                        organization. Keep copies of audit log data to ensure
+                        secure IP and maintain compliance for your organization.
+                      </p>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong>GitHub Connect</strong>
+                      </summary>
+                      <p>
+                        Share features and workflows between your GitHub
+                        Enterprise Server instance and GitHub Enterprise Cloud.
+                      </p>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong>50,000 CI/CD minutes/month</strong>
+                      </summary>
+                      <p>
+                        Use execution minutes with GitHub Actions to automate
+                        your software development workflows. Write tasks and
+                        combine them to build, test, and deploy any code project
+                        on GitHub.
+                      </p>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong>50GB of Packages storage</strong>
+                      </summary>
+                      <p>
+                        Use execution minutes with GitHub Actions to automate
+                        your software development workflows. Write tasks and
+                        combine them to build, test, and deploy any code project
+                        on GitHub.
+                      </p>
+                    </details>
+                  </li>
+                </ul>
+                <h4>EXCLUSIVE ADD-ONS</h4>
+                <ul>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong></strong>
+                      </summary>
+                      <p></p>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <strong></strong>
+                      </summary>
+                      <p></p>
+                    </details>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <section class="add-ons">
+        <h2>Additional add-ons</h2>
+        <ul class="add-ons-list">
+          <li>
+            <article class="copilot">
+              <div>
+                <svg
+                  class="copilot"
+                  width="44"
+                  height="45"
+                  viewBox="0 0 44 45"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect y="0.5" width="44" height="44" rx="22" fill="#DDF4FF" />
+                  <path
+                    d="M19.8125 23.75C20.0611 23.75 20.2996 23.8488 20.4754 24.0246C20.6512 24.2004 20.75 24.4389 20.75 24.6875V26.5625C20.75 26.8111 20.6512 27.0496 20.4754 27.2254C20.2996 27.4012 20.0611 27.5 19.8125 27.5C19.5639 27.5 19.3254 27.4012 19.1496 27.2254C18.9738 27.0496 18.875 26.8111 18.875 26.5625V24.6875C18.875 24.4389 18.9738 24.2004 19.1496 24.0246C19.3254 23.8488 19.5639 23.75 19.8125 23.75ZM25.125 24.6875C25.125 24.4389 25.0262 24.2004 24.8504 24.0246C24.6746 23.8488 24.4361 23.75 24.1875 23.75C23.9389 23.75 23.7004 23.8488 23.5246 24.0246C23.3488 24.2004 23.25 24.4389 23.25 24.6875V26.5625C23.25 26.8111 23.3488 27.0496 23.5246 27.2254C23.7004 27.4012 23.9389 27.5 24.1875 27.5C24.4361 27.5 24.6746 27.4012 24.8504 27.2254C25.0262 27.0496 25.125 26.8111 25.125 26.5625V24.6875Z"
+                    fill="#0969DA"
+                  />
+                  <path
+                    d="M21.825 14.7125C21.8875 14.7787 21.9462 14.8462 22 14.9175C22.0538 14.8462 22.1125 14.7787 22.175 14.7125C23.0263 13.7987 24.3463 13.5875 25.8538 13.7562C27.3913 13.9262 28.535 14.415 29.2588 15.3312C29.9662 16.2262 30.125 17.3487 30.125 18.4375C30.125 19.1525 30.0588 19.8712 29.8075 20.5062L30.0175 21.5537L30.1 21.595C30.671 21.8805 31.1512 22.3195 31.4868 22.8626C31.8224 23.4057 32.0001 24.0315 32 24.67V26.25C32 26.55 31.8925 26.7975 31.805 26.9587C31.7137 27.1225 31.605 27.275 31.4813 27.4162C31.2563 27.6787 30.9762 27.9325 30.725 28.1412C30.4073 28.4059 30.0769 28.6549 29.735 28.8875L29.7163 28.9L29.7087 28.905L29.6737 28.9275C29.4873 29.0503 29.2973 29.1674 29.1038 29.2787C28.72 29.5 28.1675 29.7912 27.4838 30.0812C26.12 30.66 24.195 31.25 22 31.25C19.805 31.25 17.88 30.66 16.5162 30.0812C15.961 29.8462 15.42 29.5786 14.8962 29.28C14.7027 29.1687 14.5127 29.0515 14.3262 28.9287L14.2912 28.9037L14.2838 28.9L14.265 28.8875C13.9236 28.6547 13.5932 28.4061 13.275 28.1425C13.004 27.9213 12.7512 27.6789 12.5188 27.4175C12.395 27.2764 12.2865 27.1226 12.195 26.9587C12.0717 26.7425 12.0046 26.4988 12 26.25V24.67C11.9999 24.0315 12.1776 23.4057 12.5132 22.8626C12.8488 22.3195 13.329 21.8805 13.9 21.595L13.9837 21.5537L14.1925 20.5062C13.9412 19.8712 13.875 19.1525 13.875 18.4375C13.875 17.35 14.0338 16.225 14.7413 15.3312C15.465 14.415 16.6087 13.9262 18.1462 13.7562C19.6537 13.5887 20.9725 13.7987 21.825 14.7125ZM15.75 22.28V27.6062C15.775 27.6225 15.8038 27.6375 15.8313 27.6537C16.1613 27.8437 16.6437 28.0987 17.2487 28.3562C18.4637 28.8712 20.1325 29.375 22 29.375C23.8675 29.375 25.5375 28.8712 26.75 28.3562C27.265 28.1387 27.7662 27.8875 28.25 27.6062V22.2812L28.2213 22.1362C27.6088 22.3987 26.8775 22.5 26.0625 22.5C24.63 22.5 23.4875 22.09 22.675 21.2612C22.4069 20.9853 22.1797 20.6726 22 20.3325C21.82 20.6687 21.5988 20.9825 21.325 21.2612C20.5125 22.09 19.37 22.5 17.9375 22.5C17.1225 22.5 16.3925 22.3975 15.78 22.1362L15.75 22.28ZM23.5463 15.9912C23.2913 16.2637 23.0975 16.8387 23.2437 18.0087C23.3575 18.9162 23.6225 19.5462 24.0162 19.95C24.39 20.33 24.9963 20.625 26.0638 20.625C27.2163 20.625 27.6637 20.3762 27.8663 20.15C28.09 19.9 28.2513 19.4275 28.2513 18.4375C28.2513 17.4812 28.0975 16.885 27.7887 16.4937C27.4975 16.1237 26.9225 15.7612 25.6475 15.6187C24.3425 15.4737 23.7875 15.7325 23.5463 15.9912ZM20.4563 15.9912C20.215 15.7325 19.66 15.4737 18.355 15.6187C17.08 15.7612 16.505 16.1237 16.2137 16.4937C15.905 16.885 15.7512 17.4812 15.7512 18.4375C15.7512 19.4275 15.9125 19.9 16.1363 20.15C16.3387 20.3762 16.7863 20.625 17.9387 20.625C19.0062 20.625 19.6125 20.33 19.9862 19.95C20.38 19.5462 20.645 18.9162 20.7587 18.0087C20.905 16.8387 20.7113 16.2637 20.4563 15.9912Z"
+                    fill="#0969DA"
+                  />
+                </svg>
+                <span class="note"></span>
+              </div>
+              <h3>GitHub Copilot</h3>
+              <p>Starting at $10/month after a 30 day trial.</p>
+              <div>
+                <span>Compare plans</span>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="codespaces">
+              <div>
+                <svg
+                  class="codespaces"
+                  width="44"
+                  height="45"
+                  viewBox="0 0 44 45"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect y="0.5" width="44" height="44" rx="22" fill="#FBEFFF" />
+                  <path
+                    d="M12 26.5625C12 25.355 12.98 24.375 14.1875 24.375H29.8125C31.02 24.375 32 25.355 32 26.5625V30.3125C32 30.8927 31.7695 31.4491 31.3593 31.8593C30.9491 32.2695 30.3927 32.5 29.8125 32.5H14.1875C13.6073 32.5 13.0509 32.2695 12.6407 31.8593C12.2305 31.4491 12 30.8927 12 30.3125V26.5625ZM14.5 14.6875C14.5 13.48 15.48 12.5 16.6875 12.5H27.3125C28.52 12.5 29.5 13.48 29.5 14.6875V20.9375C29.5 21.5177 29.2695 22.0741 28.8593 22.4843C28.4491 22.8945 27.8927 23.125 27.3125 23.125H16.6875C16.1073 23.125 15.5509 22.8945 15.1407 22.4843C14.7305 22.0741 14.5 21.5177 14.5 20.9375V14.6875ZM16.6875 14.375C16.6046 14.375 16.5251 14.4079 16.4665 14.4665C16.4079 14.5251 16.375 14.6046 16.375 14.6875V20.9375C16.375 21.11 16.515 21.25 16.6875 21.25H27.3125C27.3954 21.25 27.4749 21.2171 27.5335 21.1585C27.5921 21.0999 27.625 21.0204 27.625 20.9375V14.6875C27.625 14.6046 27.5921 14.5251 27.5335 14.4665C27.4749 14.4079 27.3954 14.375 27.3125 14.375H16.6875ZM14.1875 26.25C14.1046 26.25 14.0251 26.2829 13.9665 26.3415C13.9079 26.4001 13.875 26.4796 13.875 26.5625V30.3125C13.875 30.485 14.015 30.625 14.1875 30.625H29.8125C29.8954 30.625 29.9749 30.5921 30.0335 30.5335C30.0921 30.4749 30.125 30.3954 30.125 30.3125V26.5625C30.125 26.4796 30.0921 26.4001 30.0335 26.3415C29.9749 26.2829 29.8954 26.25 29.8125 26.25H14.1875Z"
+                    fill="#8250DF"
+                  />
+                  <path
+                    d="M20.75 28.4375C20.75 28.1889 20.8488 27.9504 21.0246 27.7746C21.2004 27.5988 21.4389 27.5 21.6875 27.5H27.3125C27.5611 27.5 27.7996 27.5988 27.9754 27.7746C28.1512 27.9504 28.25 28.1889 28.25 28.4375C28.25 28.6861 28.1512 28.9246 27.9754 29.1004C27.7996 29.2762 27.5611 29.375 27.3125 29.375H21.6875C21.4389 29.375 21.2004 29.2762 21.0246 29.1004C20.8488 28.9246 20.75 28.6861 20.75 28.4375ZM15.75 28.4375C15.75 28.1889 15.8488 27.9504 16.0246 27.7746C16.2004 27.5988 16.4389 27.5 16.6875 27.5H17.3125C17.5611 27.5 17.7996 27.5988 17.9754 27.7746C18.1512 27.9504 18.25 28.1889 18.25 28.4375C18.25 28.6861 18.1512 28.9246 17.9754 29.1004C17.7996 29.2762 17.5611 29.375 17.3125 29.375H16.6875C16.4389 29.375 16.2004 29.2762 16.0246 29.1004C15.8488 28.9246 15.75 28.6861 15.75 28.4375Z"
+                    fill="#8250DF"
+                  />
+                </svg>
+                <span class="note"></span>
+              </div>
+              <h3>Codespaces</h3>
+              <p>
+                Starting at $0.18 per hour of compute and $0.07 per GB of
+                storage.
+              </p>
+              <div>
+                <span>Learn more</span>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="file-storage">
+              <div>
+                <svg
+                  class="storage"
+                  width="44"
+                  height="45"
+                  viewBox="0 0 44 45"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect y="0.5" width="44" height="44" rx="22" fill="#FFF8C5" />
+                  <path
+                    d="M12 15.9375C12 14.73 12.98 13.75 14.1875 13.75H29.8125C31.02 13.75 32 14.73 32 15.9375V17.8125C32 18.3927 31.7695 18.9491 31.3593 19.3593C30.9491 19.7695 30.3927 20 29.8125 20H14.1875C13.6073 20 13.0509 19.7695 12.6407 19.3593C12.2305 18.9491 12 18.3927 12 17.8125V15.9375ZM14.1875 21.25C14.4361 21.25 14.6746 21.3488 14.8504 21.5246C15.0262 21.7004 15.125 21.9389 15.125 22.1875V29.0625C15.125 29.235 15.265 29.375 15.4375 29.375H28.5625C28.6454 29.375 28.7249 29.3421 28.7835 29.2835C28.8421 29.2249 28.875 29.1454 28.875 29.0625V22.1875C28.875 21.9389 28.9738 21.7004 29.1496 21.5246C29.3254 21.3488 29.5639 21.25 29.8125 21.25C30.0611 21.25 30.2996 21.3488 30.4754 21.5246C30.6512 21.7004 30.75 21.9389 30.75 22.1875V29.0625C30.75 29.6427 30.5195 30.1991 30.1093 30.6093C29.6991 31.0195 29.1427 31.25 28.5625 31.25H15.4375C14.8573 31.25 14.3009 31.0195 13.8907 30.6093C13.4805 30.1991 13.25 29.6427 13.25 29.0625V22.1875C13.25 21.9389 13.3488 21.7004 13.5246 21.5246C13.7004 21.3488 13.9389 21.25 14.1875 21.25ZM14.1875 15.625C14.1046 15.625 14.0251 15.6579 13.9665 15.7165C13.9079 15.7751 13.875 15.8546 13.875 15.9375V17.8125C13.875 17.985 14.015 18.125 14.1875 18.125H29.8125C29.8954 18.125 29.9749 18.0921 30.0335 18.0335C30.0921 17.9749 30.125 17.8954 30.125 17.8125V15.9375C30.125 15.8546 30.0921 15.7751 30.0335 15.7165C29.9749 15.6579 29.8954 15.625 29.8125 15.625H14.1875ZM19.8125 22.5H24.1875C24.4361 22.5 24.6746 22.5988 24.8504 22.7746C25.0262 22.9504 25.125 23.1889 25.125 23.4375C25.125 23.6861 25.0262 23.9246 24.8504 24.1004C24.6746 24.2762 24.4361 24.375 24.1875 24.375H19.8125C19.5639 24.375 19.3254 24.2762 19.1496 24.1004C18.9738 23.9246 18.875 23.6861 18.875 23.4375C18.875 23.1889 18.9738 22.9504 19.1496 22.7746C19.3254 22.5988 19.5639 22.5 19.8125 22.5Z"
+                    fill="#9A6700"
+                  />
+                </svg>
+                <span class="note"></span>
+              </div>
+              <h3>Large File Storage</h3>
+              <p>$5 per month for 50 GB bandwidth and 50 GB for storage.</p>
+              <div>
+                <span>Learn more</span>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="advanced-security">
+              <div>
+                <svg
+                  class="security"
+                  width="44"
+                  height="45"
+                  viewBox="0 0 44 45"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect y="0.5" width="44" height="44" rx="22" fill="#DAFBE1" />
+                  <path
+                    d="M22.6663 12.6661L29.2288 14.7661C29.6704 14.9073 30.0558 15.1853 30.3293 15.5598C30.6027 15.9343 30.75 16.3861 30.75 16.8498V21.2498C30.75 23.2073 30.35 25.2273 29.1212 27.1023C27.8925 28.9748 25.89 30.6186 22.8313 31.9211C22.5684 32.033 22.2857 32.0907 22 32.0907C21.7143 32.0907 21.4316 32.033 21.1687 31.9211C18.11 30.6186 16.1075 28.9748 14.8787 27.1023C13.65 25.2273 13.25 23.2073 13.25 21.2498V16.8498C13.25 16.3861 13.3973 15.9343 13.6707 15.5598C13.9442 15.1853 14.3296 14.9073 14.7713 14.7661L21.3337 12.6661C21.7671 12.5273 22.2329 12.5273 22.6663 12.6661ZM21.9037 14.4523L21.905 14.4536L15.3425 16.5536C15.2797 16.5738 15.2249 16.6133 15.1858 16.6665C15.1468 16.7197 15.1255 16.7838 15.125 16.8498V21.2498C15.125 22.9498 15.4688 24.5823 16.4462 26.0736C17.4262 27.5661 19.0975 29.0011 21.9037 30.1961C21.9342 30.2091 21.9669 30.2158 22 30.2158C22.0331 30.2158 22.0658 30.2091 22.0962 30.1961C24.9025 28.9998 26.5737 27.5673 27.5538 26.0748C28.5312 24.5823 28.875 22.9473 28.875 21.2498V16.8498C28.875 16.7836 28.8539 16.7191 28.8148 16.6656C28.7757 16.6121 28.7206 16.5725 28.6575 16.5523L22.095 14.4523C22.0328 14.4323 21.9659 14.4323 21.9037 14.4523ZM23.875 20.6248C23.875 21.2948 23.5175 21.9148 22.9375 22.2498V25.3123C22.9375 25.561 22.8387 25.7994 22.6629 25.9752C22.4871 26.151 22.2486 26.2498 22 26.2498C21.7514 26.2498 21.5129 26.151 21.3371 25.9752C21.1613 25.7994 21.0625 25.561 21.0625 25.3123V22.2498C20.7775 22.0853 20.5408 21.8486 20.3763 21.5636C20.2117 21.2787 20.1251 20.9554 20.125 20.6263C20.1249 20.2972 20.2115 19.9739 20.376 19.6889C20.5404 19.4039 20.777 19.1672 21.062 19.0025C21.3469 18.8379 21.6702 18.7512 21.9992 18.751C22.3283 18.7509 22.6516 18.8374 22.9367 19.0018C23.2218 19.1662 23.4586 19.4027 23.6233 19.6876C23.788 19.9725 23.8748 20.2957 23.875 20.6248Z"
+                    fill="#1A7F37"
+                  />
+                </svg>
+                <span class="note"></span>
+              </div>
+              <h3>GitHub Advanced Security</h3>
+              <p>$49 per month per active committer.</p>
+              <div>
+                <span>Learn more</span>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <div class="scroll-part">
+          <a href="#">
+            <strong>Compare all features</strong>
+            <img src alt="arrow-down" />
+            <svg
+              width="20"
+              height="25"
+              viewBox="0 0 20 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.626438 14.1267C0.813938 13.9394 1.0681 13.8342 1.3331 13.8342C1.59811 13.8342 1.85227 13.9394 2.03977 14.1267L8.66644 20.7533V1.5C8.66644 1.23478 8.7718 0.980429 8.95933 0.792893C9.14687 0.605357 9.40122 0.5 9.66644 0.5C9.93165 0.5 10.186 0.605357 10.3735 0.792893C10.5611 0.980429 10.6664 1.23478 10.6664 1.5V20.7533L17.2931 14.1267C17.4153 13.995 17.5708 13.8988 17.7431 13.8481C17.9155 13.7974 18.0983 13.7942 18.2723 13.8387C18.4463 13.8832 18.6052 13.9738 18.732 14.101C18.8589 14.2281 18.9491 14.3872 18.9931 14.5613C19.0377 14.7352 19.0346 14.9178 18.9841 15.09C18.9337 15.2622 18.8377 15.4177 18.7064 15.54L10.3731 23.8733C10.1856 24.0606 9.93144 24.1658 9.66644 24.1658C9.40144 24.1658 9.14727 24.0606 8.95977 23.8733L0.626438 15.54C0.43917 15.3525 0.333984 15.0983 0.333984 14.8333C0.333984 14.5683 0.43917 14.3142 0.626438 14.1267Z"
+                fill="#0969DA"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+      <section class="testimonials">
+        <ul class="trademark-logo">
+          <li class="truspilot">
+            <img
+              src="./assets/images/testimonials/trustpilot.webp"
+              alt="truspilot"
+              width="500px"
+            />
+          </li>
+          <li class="netdata">
+            <img
+              src="./assets/images/testimonials/netdata.webp"
+              alt="netdata"
+              width="500px"
+            />
+          </li>
+          <li class="american-airlines">
+            <img
+              src="./assets/images/testimonials/american-airlines.webp"
+              alt="american-airlines"
+              width="500px"
+            />
+          </li>
+          <li class="sap">
+            <img
+              src="./assets/images/testimonials/sap.webp"
+              alt="sap"
+              width="500px"
+            />
+          </li>
+          <li class="spotify">
+            <img
+              src="./assets/images/testimonials/spotify.webp"
+              alt="spotify"
+              width="500px"
+            />
+          </li>
+          <li class="stripe">
+            <img
+              src="./assets/images/testimonials/stripe.webp"
+              alt="stripe"
+              width="500px"
+            />
+          </li>
+          <li class="ford">
+            <img
+              src="./assets/images/testimonials/ford.webp"
+              alt="ford"
+              width="500px"
+            />
+          </li>
+          <li class="nubank">
+            <img
+              src="./assets/images/testimonials/nubank.webp"
+              alt="nubank"
+              width="500px"
+            />
+          </li>
+        </ul>
+        <div class="trademark-comments">
+          <article class="trustpilot-testimonial">
+            <img src alt />
+            <q
+              >GitHub is the world’s mono repository, so sharing our open source
+              there is natural.</q
+            >
+            <cite>— Martin Andersen, VP of Engineering, Trustpilot</cite>
+            <a href="#">Read the case study</a>
+          </article>
+          <article class="netdata-testimonial">
+            <img src alt />
+            <q
+              >GitHub Advanced Security is there for every pull request and
+              excels compared to other static analysis tools we have used.</q
+            >
+            <cite>— Dimosthenis Kaponis, CTO, Netdata</cite>
+            <a href="#">Read the case study</a>
+          </article>
+          <article class="american-airlines-testimonial">
+            <img src alt />
+            <q
+              >GitHub keeps us up to speed with the industry’s best tools. We
+              want new hires to know GitHub is in our toolchain—it makes them
+              excited to join us.</q
+            >
+            <cite
+              >— Spencer Kaiser, Principal Architect of Emerging Tech, American
+              Airlines</cite
+            >
+            <a href="#">Read the case study</a>
+          </article>
+          <article class="sap-testimonial">
+            <img src alt />
+            <q
+              >This collaborative way of building software is unstoppable. It
+              isn’t going away—and GitHub has its place in that. We can make the
+              whole company rethink how they build software.</q
+            >
+            <cite>— Ingo Sauerzapf, SAP Cloud Development Tools Manager </cite>
+            <a href="#">Read the case study</a>
+          </article>
+          <article class="spotify-testimonial">
+            <img src alt />
+            <q
+              >People know what a pull request is because it’s how they
+              contribute to open source projects. We have many developers who
+              are well-versed with GitHub, either for personal development or
+              previous roles. With GitHub Enterprise, no one has to relearn the
+              wheel.</q
+            >
+            <cite>— Laurent Ploix, Product Manager, Spotify</cite>
+            <a href="#">Read the case study</a>
+          </article>
+          <article class="stripe-testimonial">
+            <img src alt />
+            <q
+              >I have seen some truly revolutionary actions happen in
+              communities on GitHub. People are collaborating on code but
+              they’re also having foundational conversations on best practices
+              and how software, as a whole, is built. More and more, GitHub is
+              an internet archive. It’s a deeply social and critical piece of
+              our infrastructure.</q
+            >
+            <cite>— Michael Glukhovsky, Developer, Stripe</cite>
+            <a href="#">Read the case study</a>
+          </article>
+          <article class="ford-testimonial">
+            <img src alt />
+            <q
+              >When we started talking about code reuse, we felt like we already
+              had the perfect platform in place: GitHub.</q
+            >
+            <cite
+              >— Timothy Carmean, Software Processes and Tools Supervisor,
+              Ford</cite
+            >
+            <a href="#">Read the case study</a>
+          </article>
+          <article class="nubank-testimonial">
+            <img src alt />
+            <q
+              >Using GitHub Enterprise Cloud removes the burden of managing
+              infrastructure, and we don’t need to worry about the availability
+              of our versioning code, source code and versioning tools. It lets
+              us focus on what’s important for our business, and that’s our
+              customers.</q
+            >
+            <cite>— Victor Gomes, Infosec Tech Manager, Nubank</cite>
+            <a href="#">Read the case study</a>
+          </article>
+        </div>
+      </section>
+      <section class="compare-features">
+        <h3>Compare features</h3>
+      </section>
+      <section class="audiences">
+        <h2>We love people who are changing the world</h2>
+        <ul class="audiences-list">
+          <li>
+            <article class="team">
+              <div>
+                <svg
+                  class="team"
+                  width="44"
+                  height="45"
+                  viewBox="0 0 44 45"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    y="0.15625"
+                    width="44"
+                    height="44"
+                    rx="22"
+                    fill="#DDF4FF"
+                  />
+                  <path
+                    d="M14.1875 32.1562C13.6073 32.1562 13.0509 31.9258 12.6407 31.5155C12.2305 31.1053 12 30.5489 12 29.9688V14.3438C12 13.1362 12.98 12.1562 14.1875 12.1562H24.8125C26.02 12.1562 27 13.1362 27 14.3438V29.9688C27 30.075 26.9925 30.1787 26.9775 30.2812H29.8125C29.8954 30.2812 29.9749 30.2483 30.0335 30.1897C30.0921 30.1311 30.125 30.0516 30.125 29.9688V22.5125C30.125 22.4611 30.1124 22.4105 30.0882 22.3651C30.064 22.3198 30.029 22.2811 29.9862 22.2525L28.6675 21.3737C28.5651 21.3055 28.4771 21.2177 28.4086 21.1154C28.3401 21.0131 28.2924 20.8983 28.2683 20.7776C28.2441 20.6569 28.244 20.5326 28.2679 20.4118C28.2918 20.2911 28.3392 20.1762 28.4075 20.0738C28.4758 19.9713 28.5636 19.8833 28.6659 19.8148C28.7682 19.7463 28.8829 19.6987 29.0037 19.6745C29.1244 19.6504 29.2487 19.6502 29.3694 19.6741C29.4902 19.698 29.6051 19.7455 29.7075 19.8137L31.0262 20.6925C31.635 21.0988 32 21.7812 32 22.5125V29.9688C32 30.5489 31.7695 31.1053 31.3593 31.5155C30.9491 31.9258 30.3927 32.1562 29.8125 32.1562H25.4375C25.3544 32.1562 25.2716 32.1452 25.1913 32.1238C25.0675 32.145 24.9412 32.1562 24.8125 32.1562H21.0625C20.8139 32.1562 20.5754 32.0575 20.3996 31.8817C20.2238 31.7058 20.125 31.4674 20.125 31.2188V29.6562H18.875V31.2188C18.875 31.4674 18.7762 31.7058 18.6004 31.8817C18.4246 32.0575 18.1861 32.1562 17.9375 32.1562H14.1875ZM13.875 29.9688C13.875 30.1413 14.015 30.2812 14.1875 30.2812H17V28.7188C17 28.4701 17.0988 28.2317 17.2746 28.0558C17.4504 27.88 17.6889 27.7812 17.9375 27.7812H21.0625C21.3111 27.7812 21.5496 27.88 21.7254 28.0558C21.9012 28.2317 22 28.4701 22 28.7188V30.2812H24.8125C24.8954 30.2812 24.9749 30.2483 25.0335 30.1897C25.0921 30.1311 25.125 30.0516 25.125 29.9688V14.3438C25.125 14.2609 25.0921 14.1814 25.0335 14.1228C24.9749 14.0642 24.8954 14.0312 24.8125 14.0312H14.1875C14.1046 14.0312 14.0251 14.0642 13.9665 14.1228C13.9079 14.1814 13.875 14.2609 13.875 14.3438V29.9688ZM16.6875 19.6562H17.3125C17.5611 19.6562 17.7996 19.755 17.9754 19.9308C18.1512 20.1067 18.25 20.3451 18.25 20.5938C18.25 20.8424 18.1512 21.0808 17.9754 21.2567C17.7996 21.4325 17.5611 21.5312 17.3125 21.5312H16.6875C16.4389 21.5312 16.2004 21.4325 16.0246 21.2567C15.8488 21.0808 15.75 20.8424 15.75 20.5938C15.75 20.3451 15.8488 20.1067 16.0246 19.9308C16.2004 19.755 16.4389 19.6562 16.6875 19.6562ZM15.75 16.8438C15.75 16.5951 15.8488 16.3567 16.0246 16.1808C16.2004 16.005 16.4389 15.9062 16.6875 15.9062H17.3125C17.5611 15.9062 17.7996 16.005 17.9754 16.1808C18.1512 16.3567 18.25 16.5951 18.25 16.8438C18.25 17.0924 18.1512 17.3308 17.9754 17.5067C17.7996 17.6825 17.5611 17.7812 17.3125 17.7812H16.6875C16.4389 17.7812 16.2004 17.6825 16.0246 17.5067C15.8488 17.3308 15.75 17.0924 15.75 16.8438ZM20.75 20.5938C20.75 20.3451 20.8488 20.1067 21.0246 19.9308C21.2004 19.755 21.4389 19.6562 21.6875 19.6562H22.3125C22.5611 19.6562 22.7996 19.755 22.9754 19.9308C23.1512 20.1067 23.25 20.3451 23.25 20.5938C23.25 20.8424 23.1512 21.0808 22.9754 21.2567C22.7996 21.4325 22.5611 21.5312 22.3125 21.5312H21.6875C21.4389 21.5312 21.2004 21.4325 21.0246 21.2567C20.8488 21.0808 20.75 20.8424 20.75 20.5938ZM21.6875 15.9062H22.3125C22.5611 15.9062 22.7996 16.005 22.9754 16.1808C23.1512 16.3567 23.25 16.5951 23.25 16.8438C23.25 17.0924 23.1512 17.3308 22.9754 17.5067C22.7996 17.6825 22.5611 17.7812 22.3125 17.7812H21.6875C21.4389 17.7812 21.2004 17.6825 21.0246 17.5067C20.8488 17.3308 20.75 17.0924 20.75 16.8438C20.75 16.5951 20.8488 16.3567 21.0246 16.1808C21.2004 16.005 21.4389 15.9062 21.6875 15.9062ZM15.75 24.3438C15.75 24.0951 15.8488 23.8567 16.0246 23.6808C16.2004 23.505 16.4389 23.4062 16.6875 23.4062H17.3125C17.5611 23.4062 17.7996 23.505 17.9754 23.6808C18.1512 23.8567 18.25 24.0951 18.25 24.3438C18.25 24.5924 18.1512 24.8308 17.9754 25.0067C17.7996 25.1825 17.5611 25.2812 17.3125 25.2812H16.6875C16.4389 25.2812 16.2004 25.1825 16.0246 25.0067C15.8488 24.8308 15.75 24.5924 15.75 24.3438ZM21.6875 23.4062H22.3125C22.5611 23.4062 22.7996 23.505 22.9754 23.6808C23.1512 23.8567 23.25 24.0951 23.25 24.3438C23.25 24.5924 23.1512 24.8308 22.9754 25.0067C22.7996 25.1825 22.5611 25.2812 22.3125 25.2812H21.6875C21.4389 25.2812 21.2004 25.1825 21.0246 25.0067C20.8488 24.8308 20.75 24.5924 20.75 24.3438C20.75 24.0951 20.8488 23.8567 21.0246 23.6808C21.2004 23.505 21.4389 23.4062 21.6875 23.4062Z"
+                    fill="#0969DA"
+                  />
+                </svg>
+                <span class="note"></span>
+              </div>
+              <h3>Open source teams</h3>
+              <p>
+                If you manage multiple contributors, there’s a free option. We
+                also run GitHub Sponsors, where we help fund your work.
+              </p>
+              <div>
+                <span>Learn more</span>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="student">
+              <div>
+                <svg
+                  class="student"
+                  width="45"
+                  height="45"
+                  viewBox="0 0 45 45"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.65625"
+                    y="0.15625"
+                    width="44"
+                    height="44"
+                    rx="22"
+                    fill="#FFF8C5"
+                  />
+                  <path
+                    d="M22.2717 13.4888C22.3923 13.4344 22.5231 13.4062 22.6554 13.4062C22.7878 13.4062 22.9186 13.4344 23.0392 13.4888L32.1017 17.5513C32.2664 17.6253 32.4063 17.7455 32.5044 17.8971C32.6025 18.0488 32.6546 18.2256 32.6546 18.4063C32.6546 18.5869 32.6025 18.7637 32.5044 18.9154C32.4063 19.067 32.2664 19.1872 32.1017 19.2613L28.9054 20.695V24.1875C28.9054 25.4675 27.8929 26.3738 26.8304 26.9038C25.7142 27.4625 24.2367 27.7813 22.6554 27.7813C22.3079 27.7813 21.9679 27.7663 21.6354 27.7363C21.3898 27.7116 21.1638 27.5912 21.0065 27.401C20.8492 27.2107 20.7732 26.9662 20.7951 26.7203C20.817 26.4744 20.935 26.2471 21.1234 26.0877C21.3119 25.9282 21.5556 25.8496 21.8017 25.8688C22.0767 25.8938 22.3642 25.9063 22.6554 25.9063C24.0079 25.9063 25.1867 25.63 25.9929 25.2275C26.8554 24.7963 27.0304 24.375 27.0304 24.1875V21.535L23.0392 23.3238C22.9186 23.3781 22.7878 23.4063 22.6554 23.4063C22.5231 23.4063 22.3923 23.3781 22.2717 23.3238L17.6554 21.2563V23.335C18.0254 23.4663 18.3742 23.6788 18.6704 23.975C19.2179 24.5225 19.5304 25.2988 19.5304 26.22V29.97C19.5304 30.2186 19.4317 30.4571 19.2559 30.6329C19.08 30.8087 18.8416 30.9075 18.5929 30.9075H14.8429C14.5943 30.9075 14.3558 30.8087 14.18 30.6329C14.0042 30.4571 13.9054 30.2186 13.9054 29.97V26.22C13.9054 25.2988 14.2179 24.5225 14.7654 23.975C15.0617 23.6788 15.4104 23.4663 15.7804 23.335V20.4138L13.2092 19.2613C13.0445 19.1872 12.9046 19.067 12.8065 18.9154C12.7084 18.7637 12.6562 18.5869 12.6562 18.4063C12.6562 18.2256 12.7084 18.0488 12.8065 17.8971C12.9046 17.7455 13.0445 17.6253 13.2092 17.5513L22.2717 13.4888ZM15.8842 18.4063L22.6554 21.4413L29.4254 18.4063L22.6554 15.3713L15.8842 18.4063ZM15.7804 26.2188V29.0313H17.6554V26.2188C17.6554 25.7338 17.4992 25.455 17.3429 25.3C17.2609 25.2183 17.1633 25.1538 17.056 25.1102C16.9487 25.0666 16.8338 25.0449 16.7179 25.0463C16.4843 25.0449 16.2595 25.1361 16.0929 25.3C15.9367 25.455 15.7804 25.7338 15.7804 26.2188Z"
+                    fill="#9A6700"
+                  />
+                </svg>
+                <span class="note"></span>
+              </div>
+              <h3>Students and teachers</h3>
+              <p>
+                We’ve partnered with industry leaders to give students and
+                teachers free access to the best developer tools—for the school
+                year and beyond.
+              </p>
+              <div>
+                <span>Learn more</span>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="nonprofits">
+              <div>
+                <svg
+                  class="nonprofits"
+                  width="45"
+                  height="45"
+                  viewBox="0 0 45 45"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.3125"
+                    y="0.15625"
+                    width="44"
+                    height="44"
+                    rx="22"
+                    fill="#FFEFF7"
+                  />
+                  <path
+                    d="M22.3125 12.1562C24.9647 12.1563 27.5082 13.2098 29.3836 15.0852C31.2589 16.9605 32.3125 19.5041 32.3125 22.1562C32.3125 24.8084 31.2589 27.352 29.3836 29.2273C27.5082 31.1027 24.9647 32.1562 22.3125 32.1562C19.6603 32.1562 17.1168 31.1027 15.2414 29.2273C13.3661 27.352 12.3125 24.8084 12.3125 22.1562C12.3125 19.5041 13.3661 16.9605 15.2414 15.0852C17.1168 13.2098 19.6603 12.1563 22.3125 12.1562ZM19.5375 23.0938C19.6959 24.9421 20.279 26.7289 21.2413 28.315C21.56 28.8475 21.9187 29.355 22.3125 29.8337C22.6187 29.4638 23.0013 28.9525 23.3838 28.315C24.346 26.7289 24.9291 24.9421 25.0875 23.0938H19.5375ZM25.0875 21.2188C24.9291 19.3704 24.346 17.5836 23.3838 15.9975C23 15.36 22.6187 14.8488 22.3125 14.4787C21.918 14.9575 21.5599 15.4652 21.2413 15.9975C20.279 17.5836 19.6959 19.3704 19.5375 21.2188H25.0875ZM17.6575 23.0938H14.2413C14.4271 24.6871 15.08 26.19 16.1178 27.4133C17.1556 28.6366 18.5319 29.5257 20.0738 29.9688C19.92 29.7425 19.7737 29.5125 19.6337 29.2787C18.74 27.7887 17.8375 25.6862 17.6575 23.0938ZM14.2413 21.2188H17.6575C17.8375 18.6263 18.74 16.5238 19.6325 15.0338C19.7825 14.7875 19.9288 14.5575 20.0738 14.3438C18.5319 14.7868 17.1556 15.6759 16.1178 16.8992C15.08 18.1225 14.4271 19.6254 14.2413 21.2188ZM26.9675 23.0938C26.7875 25.6862 25.885 27.7887 24.9925 29.2787C24.8425 29.525 24.6963 29.755 24.5513 29.9688C26.0931 29.5257 27.4694 28.6366 28.5072 27.4133C29.545 26.19 30.1979 24.6871 30.3837 23.0938H26.9675ZM30.3837 21.2188C30.1979 19.6254 29.545 18.1225 28.5072 16.8992C27.4694 15.6759 26.0931 14.7868 24.5513 14.3438C24.705 14.57 24.8512 14.8 24.9925 15.0338C25.885 16.5238 26.7875 18.6263 26.9675 21.2188H30.3837Z"
+                    fill="#BF3989"
+                  />
+                </svg>
+                <span class="note"></span>
+              </div>
+              <h3>Nonprofits</h3>
+              <p>
+                Work for a government-recognized nonprofit, association, or
+                501(c)(3)? Get a discounted Organization account on us.
+              </p>
+              <div>
+                <span>Learn more</span>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <div class="scroll-part">
+          <a href="#">
+            <strong>Compare all features</strong>
+            <img src alt="arrow-down" />
+            <svg
+              width="20"
+              height="25"
+              viewBox="0 0 20 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.626438 14.1267C0.813938 13.9394 1.0681 13.8342 1.3331 13.8342C1.59811 13.8342 1.85227 13.9394 2.03977 14.1267L8.66644 20.7533V1.5C8.66644 1.23478 8.7718 0.980429 8.95933 0.792893C9.14687 0.605357 9.40122 0.5 9.66644 0.5C9.93165 0.5 10.186 0.605357 10.3735 0.792893C10.5611 0.980429 10.6664 1.23478 10.6664 1.5V20.7533L17.2931 14.1267C17.4153 13.995 17.5708 13.8988 17.7431 13.8481C17.9155 13.7974 18.0983 13.7942 18.2723 13.8387C18.4463 13.8832 18.6052 13.9738 18.732 14.101C18.8589 14.2281 18.9491 14.3872 18.9931 14.5613C19.0377 14.7352 19.0346 14.9178 18.9841 15.09C18.9337 15.2622 18.8377 15.4177 18.7064 15.54L10.3731 23.8733C10.1856 24.0606 9.93144 24.1658 9.66644 24.1658C9.40144 24.1658 9.14727 24.0606 8.95977 23.8733L0.626438 15.54C0.43917 15.3525 0.333984 15.0983 0.333984 14.8333C0.333984 14.5683 0.43917 14.3142 0.626438 14.1267Z"
+                fill="#0969DA"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+      <section class="frequent-questions">
+        <h2>Frequently asked questions</h2>
+        <div class="subcriptions-and-payments">
+          <h3>Subscriptions & Payments</h3>
+          <details>
+            <summary>
+              What are the differences between GitHub Free, GitHub Pro, GitHub
+              Team, and GitHub Enterprise plans?
+            </summary>
+            <p>
+              GitHub Free is our basic plan created for individuals and small
+              teams to collaborate on private and public repositories.<br />
+              GitHub Pro offers additional usage limits and functionality for
+              advanced collaboration in individual user accounts.<br />
+              GitHub Team offers additional functionality for advanced
+              collaboration across repositories for growing teams.<br />
+              GitHub Enterprise adds additional security for accessing your
+              organization and the option to purchase GitHub Advanced Security.
+              To learn more about types of GitHub accounts, please click
+              <a href="#">here</a>.
+            </p>
+          </details>
+          <details>
+            <summary>How do I view and manage my subscription?</summary>
+            <p>
+              You can view your account's subscription, your other paid features
+              and products, and your next billing date in your account's billing
+              settings. Click <a href="#">here</a> to learn more.
+            </p>
+          </details>
+          <details>
+            <summary>How can I change my GitHub subscription?</summary>
+            <p>
+              You can upgrade or downgrade your subscription, add and remove
+              seats, or change the billing cadence on
+              https://github.com/settings/billing.
+            </p>
+          </details>
+        </div>
+        <div class="actions-and-packages">
+          <h3>Actions & Packages</h3>
+          <details>
+            <summary>
+              Which plans include access to GitHub Actions and Packages?
+            </summary>
+            <p>
+              GitHub Actions and Packages are free for public repositories and
+              packages on all our current per-user plans, while private
+              repositories and packages receive a set amount of free minutes,
+              storage, and data transfer depending on the per-user plan. Legacy
+              per-repository plans (Bronze, Silver, Gold etc) do not come with
+              access to GitHub Actions and Packages but they can be upgraded to
+              a current per-user plan. Learn more about billing for Actions
+              <a href="#">here</a>. Learn more about billing for Packages
+              <a href="#">here</a>.
+            </p>
+          </details>
+          <details>
+            <summary>
+              How do I manage my spending for Actions and Packages?
+            </summary>
+            <p>
+              You can manage your spending for Actions and Packages in your
+              billing settings page under the payment information tab. To learn
+              more, click <a href="#">here</a>.
+            </p>
+          </details>
+          <details>
+            <summary>How do I estimate my spending limits?</summary>
+            <p>
+              To make estimations for your project, please visit our pricing
+              calculator page.
+            </p>
+          </details>
+        </div>
+        <div class="codespaces">
+          <h3>Codespaces</h3>
+          <details>
+            <summary>How do I enable Codespaces on my account?</summary>
+            <p>
+              Codespaces can only be enabled for organizations using GitHub Team
+              or GitHub Enterprise Cloud. To learn more please go
+              <a href="#">here</a>.
+            </p>
+          </details>
+          <details>
+            <summary>
+              How do I view how much GitHub Codespaces I have used?
+            </summary>
+            <p>
+              You can view your Codespaces usage in the billing settings. Click
+              <a href="#">here</a> to learn more.
+            </p>
+          </details>
+          <details>
+            <summary>How do I manage my spending for Codespaces?</summary>
+            <p>
+              Organization owners and billing managers can manage the spending
+              limit for Codespaces in the billing settings. You can learn more
+              about managing the spending limit
+              <a href="#"><a href="#">here</a></a
+              >.
+            </p>
+          </details>
+        </div>
+        <div class="copilot">
+          <h3>Copilot</h3>
+          <details>
+            <summary>What is the pricing for GitHub Copilot?</summary>
+            <p>
+              GitHub Copilot for Individuals cost $10 USD/month or $100 USD/year
+              per seat. GitHub Copilot for Business cost $19 per seat, per
+              month. <a href="#">See pricing details</a>
+            </p>
+          </details>
+          <details>
+            <summary>
+              I work on open source projects, can I get access to GitHub Copilot
+              for free?
+            </summary>
+            <p>
+              People who maintain popular open source projects receive a credit
+              to have 12 months of GitHub Copilot access for free. A maintainer
+              of a popular open source project is defined as someone who has
+              write or admin access to one or more of the most popular open
+              source projects on GitHub. Simply visit the GitHub Copilot
+              subscription page to see if you are one of the open source
+              maintainers that meet our criteria for a complimentary
+              subscription. If you do, you should see that you can add GitHub
+              Copilot for no charge. If you see a charge on the purchase page
+              then this means that you do not qualify at this time. Once
+              awarded, if you are still a maintainer of a popular open source
+              project when your initial 12 months subscription expires then you
+              will be able to renew your subscription for free.
+            </p>
+          </details>
+          <details>
+            <summary>
+              I am a student, can I get access to GitHub Copilot for free?
+            </summary>
+            <p>
+              Yes, if you are a student within our GitHub Global Campus Program,
+              you get access to GitHub Copilot for free through the Student
+              Developer Pack. If you are a GitHub Global Campus Student then you
+              will see that GitHub Copilot is offered to you for no charge when
+              you visit the GitHub Copilot subscription page. If you see a
+              charge then you do not meet the criteria as a verified student at
+              this time. Learn more about how to
+              <a href="#">apply for the GitHub</a>
+              <a href="#">Student Developer Pack</a>
+            </p>
+          </details>
+        </div>
+        <div class="advanced-security">
+          <h3>GitHub Advanced Security</h3>
+          <details>
+            <summary>
+              How can I learn more about GitHub Advanced Security?
+            </summary>
+            <p>
+              GitHub Advanced Security is only available on the GitHub
+              Enterprise plan (Cloud and Server) as a separately paid add-on.
+              You can learn more about GitHub Advanced Security on
+              <a href="#">our web page</a>. To request a product demo please
+              submit this <a href="#">form</a>.
+            </p>
+          </details>
+          <details>
+            <summary>How long is the trial period?</summary>
+            <p>
+              <a href>GitHub Advanced Security</a> trial is 14-days. During the
+              trial duration you can use all GitHub Advanced Security features
+              across all organizations attached to your Enterprise Account.
+            </p>
+          </details>
+          <details>
+            <summary>How much does GitHub Advanced Security cost?</summary>
+            <p>
+              GitHub Advanced Security is $49 <a href>per committer</a> per
+              month, to learn more visit the GitHub
+              <a href="#">Pricing Page</a>. If you have technical or support
+              related questions regarding GitHub Advanced Security, please visit
+              our community <a href="#">discussion</a> page. For questions
+              related to contracts, please contact GitHub
+              <a href="#">sales</a> team.
+            </p>
+          </details>
+        </div>
+        <div class="enterprise-cloud-trial">
+          <h3>GitHub Enterprise Cloud Trial</h3>
+          <details>
+            <summary>What's included in the trial?</summary>
+            <p>
+              You can try GitHub Enterprise for free for 30 days. If you are a
+              new GitHub customer, your trial includes 50 seats. If you need
+              more seats to evaluate GitHub Enterprise Cloud, contact
+              <a href="#">GitHub's Sales team</a>. Learn more and
+              <a href="#">set up your trial experience</a>.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Can I skip the trial and start with the paid version of GitHub
+              Enterprise?
+            </summary>
+            <p>
+              Yes, you can sign up directly for a paid GitHub Enterprise plan by
+              going to the billing settings in your account. Read more about
+              <a href="#">how we bill for enterprise</a>u.
+            </p>
+          </details>
+          <details>
+            <summary>
+              How do I add members to the trial organization account?
+            </summary>
+            <p>
+              If you are a new GitHub customer, your trial includes 50 seats. If
+              you are an existing GitHub Team customer, your trial is valid for
+              your existing number of seats. If you need more seats to evaluate
+              GitHub Enterprise Cloud, contact <a href="#">Sales</a>.
+            </p>
+          </details>
+        </div>
+        <div class="general">
+          <h3>General</h3>
+          <details>
+            <summary>How does GitHub compare to its main competitors?</summary>
+            <p>
+              There are dozens of alternative DevOps tools from best-in-breed
+              point solutions to full platforms. So how does GitHub compare?
+              There are plenty of analyst reports that answer that question—but
+              here's an overview to help you get started. Learn more about how
+              <a href="#">GitHub compares</a>.
+            </p>
+          </details>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="top">
+        <div class="column">
+          <svg
+            height="30"
+            aria-hidden="true"
+            viewBox="0 0 45 16"
+            version="1.1"
+            width="84"
+            data-view-component="true"
+            class="octicon octicon-logo-github footer-logo-mktg width-auto d-block"
+          >
+            <path
+              d="M8.81 7.35v5.74c0 .04-.01.11-.06.13 0 0-1.25.89-3.31.89-2.49 0-5.44-.78-5.44-5.92S2.58 1.99 5.1 2c2.18 0 3.06.49 3.2.58.04.05.06.09.06.14L7.94 4.5c0 .09-.09.2-.2.17-.36-.11-.9-.33-2.17-.33-1.47 0-3.05.42-3.05 3.73s1.5 3.7 2.58 3.7c.92 0 1.25-.11 1.25-.11v-2.3H4.88c-.11 0-.19-.08-.19-.17V7.35c0-.09.08-.17.19-.17h3.74c.11 0 .19.08.19.17Zm35.85 2.33c0 3.43-1.11 4.41-3.05 4.41-1.64 0-2.52-.83-2.52-.83s-.04.46-.09.52c-.03.06-.08.08-.14.08h-1.48c-.1 0-.19-.08-.19-.17l.02-11.11c0-.09.08-.17.17-.17h2.13c.09 0 .17.08.17.17v3.77s.82-.53 2.02-.53l-.01-.02c1.2 0 2.97.45 2.97 3.88ZM27.68 2.43c.09 0 .17.08.17.17v11.11c0 .09-.08.17-.17.17h-2.13c-.09 0-.17-.08-.17-.17l.02-4.75h-3.31v4.75c0 .09-.08.17-.17.17h-2.13c-.08 0-.17-.08-.17-.17V2.6c0-.09.08-.17.17-.17h2.13c.09 0 .17.08.17.17v4.09h3.31V2.6c0-.09.08-.17.17-.17Zm8.26 3.64c.11 0 .19.08.19.17l-.02 7.47c0 .09-.06.17-.17.17H34.6c-.07 0-.14-.04-.16-.09-.03-.06-.08-.45-.08-.45s-1.13.77-2.52.77c-1.69 0-2.92-.55-2.92-2.75V6.25c0-.09.08-.17.17-.17h2.14c.09 0 .17.08.17.17V11c0 .75.22 1.09.97 1.09s1.3-.39 1.3-.39V6.26c0-.11.06-.19.17-.19Zm-17.406 5.971h.005a.177.177 0 0 1 .141.179v1.5c0 .07-.03.14-.09.16-.1.05-.74.22-1.27.22-1.16 0-2.86-.25-2.86-2.69V8.13h-1.11c-.09 0-.17-.08-.17-.19V6.58c0-.08.05-.15.13-.17.07-.01 1.16-.28 1.16-.28V3.96c0-.08.05-.13.14-.13h2.16c.09 0 .14.05.14.13v2.11h1.59c.08 0 .16.08.16.17v1.7c0 .11-.07.19-.16.19h-1.59v3.131c0 .47.27.83 1.05.83.247 0 .481-.049.574-.05ZM12.24 6.06c.09 0 .17.08.17.17v7.37c0 .18-.05.27-.25.27h-1.92c-.17 0-.3-.07-.3-.27V6.26c0-.11.08-.2.17-.2Zm29.99 3.78c0-1.81-.73-2.05-1.5-1.97-.6.04-1.08.34-1.08.34v3.52s.49.34 1.22.36c1.03.03 1.36-.34 1.36-2.25ZM11.19 2.68c.75 0 1.36.61 1.36 1.38 0 .77-.61 1.38-1.36 1.38-.77 0-1.38-.61-1.38-1.38 0-.77.61-1.38 1.38-1.38Zm7.34 9.35v.001l.01.01h-.001l-.005-.001v.001c-.009-.001-.015-.011-.024-.011Z"
+            ></path>
+          </svg>
+          <h6>Subscribe to <em>The GitHub Insider</em></h6>
+          <p>
+            Discover tips, technical guides, and best practices in our monthly
+            newsletter for developers.
+          </p>
+          <a class="btn-link" href="#">Subcribe</a>
+        </div>
+        <div class="column">
+          <h6>Product</h6>
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Enterprise</a></li>
+            <li><a href="#">Customer stories</a></li>
+            <li><a href="#">The ReadME Project</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Roadmap</a></li>
+            <li><a href="#">Compare GitHub</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h6>Platform</h6>
+          <ul>
+            <li><a href="#">Developer API</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Electron</a></li>
+            <li><a href="#">GitHub Desktop</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h6>Support</h6>
+          <ul>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Community Forum</a></li>
+            <li><a href="#">Professional Services</a></li>
+            <li><a href="#">Premium Support</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Status</a></li>
+            <li><a href="#">Contact GitHub</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h6>Company</h6>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Inclusion</a></li>
+            <li><a href="#">Social Impact</a></li>
+            <li><a href="#">Shop</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom">
+        <ul class="left-list">
+          <li>© 2023 GitHub, Inc.</li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy (Updated 08/2022)</a></li>
+          <li><a href="#">Sitemap</a></li>
+          <li><a href="#">What is Git?</a></li>
+        </ul>
+        <ul class="right-list">
+          <li class="twitter">
+            <a href="#">
+              <svg
+                width="22"
+                height="19"
+                viewBox="0 0 22 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22 2.83104C21.1778 3.19766 20.3043 3.43637 19.4099 3.5389C20.3537 2.97732 21.0601 2.09067 21.3967 1.0453C20.5082 1.56974 19.5372 1.93965 18.525 2.13927C17.9059 1.47973 17.1027 1.02152 16.2199 0.824096C15.337 0.626677 14.4152 0.699164 13.5741 1.03215C12.7329 1.36514 12.0113 1.94325 11.5028 2.69147C10.9943 3.43969 10.7225 4.32346 10.7225 5.22812C10.7215 5.57491 10.762 5.92057 10.8431 6.25773C9.04843 6.16678 7.29277 5.70025 5.68965 4.8883C4.08653 4.07635 2.67162 2.93704 1.53638 1.54402C0.958857 2.53773 0.782115 3.7143 1.04219 4.83383C1.30227 5.95336 1.97958 6.93153 2.93601 7.56888C2.21991 7.54617 1.51952 7.35315 0.89287 7.00581V7.06212C0.892853 8.10403 1.25332 9.11386 1.9131 9.92026C2.57287 10.7267 3.49133 11.2799 4.51261 11.4862C4.12481 11.5931 3.72438 11.6472 3.32212 11.6471C3.03613 11.6447 2.75088 11.6177 2.46947 11.5667C2.75802 12.4633 3.31924 13.2475 4.07484 13.8099C4.83044 14.3723 5.74274 14.6848 6.68446 14.7038C5.08433 15.9567 3.11013 16.6364 1.07788 16.6343C0.717662 16.6332 0.357796 16.6117 0 16.57C2.06354 17.8957 4.46505 18.5994 6.91773 18.597C15.219 18.597 19.7558 11.7195 19.7558 5.75901C19.7558 5.56596 19.7477 5.36486 19.7397 5.17181C20.6263 4.53221 21.3918 3.73953 22 2.83104Z"
+                  fill="#959DA5"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="facebook">
+            <a href="#">
+              <svg
+                width="18"
+                height="19"
+                viewBox="0 0 18 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.007 0.65625H0.994029C0.733668 0.679923 0.49209 0.801851 0.318402 0.99725C0.144713 1.19265 0.0519488 1.44686 0.0589645 1.7082V17.6043C0.0519488 17.8656 0.144713 18.1199 0.318402 18.3153C0.49209 18.5107 0.733668 18.6326 0.994029 18.6562H9.5265V11.6433H7.18883V8.95495H9.5265V6.96794C9.45012 6.10327 9.71189 5.24265 10.2568 4.56696C10.8017 3.89126 11.5873 3.4531 12.4486 3.34456H13.033C13.7363 3.3252 14.44 3.3643 15.1369 3.46145V5.91599H13.6174C12.4486 5.91599 12.3317 6.50041 12.3317 7.2017V8.95495H15.02L14.6694 11.6433H12.3317V18.5394H16.8901C17.1515 18.5464 17.4057 18.4536 17.6011 18.2799C17.7965 18.1062 17.9184 17.8647 17.9421 17.6043V1.59131C17.9257 1.34872 17.8219 1.1203 17.65 0.948373C17.478 0.776443 17.2496 0.672659 17.007 0.65625Z"
+                  fill="#959DA5"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="linkedin">
+            <a href="#">
+              <svg
+                width="19"
+                height="19"
+                viewBox="0 0 19 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3.93945 2.65617C3.93927 3.05425 3.82031 3.44322 3.59777 3.7733C3.37524 4.10337 3.05927 4.35952 2.69031 4.50898C2.32135 4.65843 1.91619 4.69437 1.52668 4.61221C1.13717 4.53006 0.781037 4.33353 0.503871 4.04779C0.226705 3.76205 0.0411131 3.4001 -0.0291475 3.00827C-0.099408 2.61644 -0.0511408 2.21256 0.109476 1.84832C0.270092 1.48408 0.535751 1.17606 0.872446 0.963679C1.20914 0.751302 1.60155 0.644232 1.99945 0.656174C2.51942 0.67178 3.01284 0.889363 3.37504 1.26276C3.73723 1.63615 3.93969 2.13597 3.93945 2.65617ZM3.99945 6.13617H-0.000545874V18.6562H3.99945V6.13617ZM10.3195 6.13617H6.33945V18.6562H10.2795V12.0862C10.2795 8.42617 15.0495 8.08617 15.0495 12.0862V18.6562H18.9995V10.7262C18.9995 4.55617 11.9395 4.78617 10.2795 7.81617L10.3195 6.13617Z"
+                  fill="#959DA5"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="youtube">
+            <a href="#">
+              <svg
+                width="23"
+                height="17"
+                viewBox="0 0 23 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_1_1867)">
+                  <path
+                    d="M22.3056 3.16214C22.1814 2.68299 21.9335 2.24491 21.5866 1.89182C21.2397 1.53873 20.806 1.28303 20.3292 1.15037C18.5645 0.656256 11.4939 0.656256 11.4939 0.656256C8.54559 0.620825 5.59814 0.778022 2.67035 1.12684C2.1933 1.2692 1.76041 1.53078 1.41253 1.88689C1.06466 2.243 0.813271 2.6819 0.682111 3.16214C0.365801 4.97619 0.212249 6.81487 0.223287 8.65626C0.211492 10.4977 0.36505 12.3364 0.682111 14.1504C0.810572 14.6293 1.06141 15.0667 1.41 15.4194C1.75858 15.7721 2.19292 16.0281 2.67035 16.1621C4.45858 16.6563 11.4939 16.6563 11.4939 16.6563C14.4461 16.6917 17.3974 16.5345 20.3292 16.1857C20.806 16.053 21.2397 15.7973 21.5866 15.4442C21.9335 15.0911 22.1814 14.6531 22.3056 14.1739C22.63 12.3607 22.7875 10.5217 22.7762 8.67979C22.8005 6.82959 22.6429 4.98149 22.3056 3.16214ZM9.24682 12.0798V5.23273L15.1292 8.65626L9.24682 12.0798Z"
+                    fill="#959DA5"
+                  />
+                </g>
+                <defs>
+                  <clippath id="clip0_1_1867">
+                    <rect
+                      width="22.5529"
+                      height="16"
+                      fill="white"
+                      transform="translate(0.222656 0.65625)"
+                    />
+                  </clippath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+          <li class="chat">
+            <a href="#">
+              <svg
+                width="18"
+                height="19"
+                viewBox="0 0 18 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_1_1870)">
+                  <path
+                    d="M8.67791 4.19175H9.96416V8.049H8.67716L8.67791 4.19175ZM12.2142 4.19175H13.4997V8.049H12.2142V4.19175ZM4.49966 0.65625L1.28516 3.87075V15.4418H5.14241V18.6562L8.35691 15.4418H10.9279L16.7142 9.65625V0.65625H4.49966ZM15.4279 9.0135L12.8569 11.5845H10.2852L8.03516 13.8345V11.5845H5.14241V1.94175H15.4279V9.0135Z"
+                    fill="#959DA5"
+                  />
+                </g>
+                <defs>
+                  <clippath id="clip0_1_1870">
+                    <rect
+                      width="18"
+                      height="18"
+                      fill="white"
+                      transform="translate(0 0.65625)"
+                    />
+                  </clippath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+          <li class="tiktok">
+            <a href="#">
+              <svg
+                width="18"
+                height="19"
+                viewBox="0 0 18 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_1_1873)">
+                  <path
+                    d="M9.39286 0.67125C10.3754 0.65625 11.3504 0.66375 12.3254 0.65625C12.3854 1.80375 12.7979 2.97375 13.6379 3.78375C14.4779 4.61625 15.6629 4.99875 16.8179 5.12625V8.14875C15.7379 8.11125 14.6504 7.88625 13.6679 7.42125C13.2404 7.22625 12.8429 6.97875 12.4529 6.72375C12.4454 8.91375 12.4604 11.1037 12.4379 13.2862C12.3779 14.3362 12.0329 15.3787 11.4254 16.2412C10.4429 17.6812 8.74036 18.6187 6.99286 18.6487C5.92036 18.7087 4.84786 18.4162 3.93286 17.8762C2.41786 16.9837 1.35286 15.3487 1.19536 13.5937C1.18036 13.2187 1.17286 12.8437 1.18786 12.4762C1.32286 11.0512 2.02786 9.68625 3.12286 8.75625C4.36786 7.67625 6.10786 7.15875 7.73536 7.46625C7.75036 8.57625 7.70536 9.68625 7.70536 10.7962C6.96286 10.5562 6.09286 10.6237 5.44036 11.0737C4.96786 11.3812 4.60786 11.8537 4.42036 12.3862C4.26286 12.7687 4.30786 13.1887 4.31536 13.5937C4.49536 14.8237 5.68036 15.8587 6.94036 15.7462C7.78036 15.7387 8.58286 15.2512 9.01786 14.5387C9.16036 14.2912 9.31786 14.0362 9.32536 13.7437C9.40036 12.4012 9.37036 11.0662 9.37786 9.72375C9.38536 6.70125 9.37036 3.68625 9.39286 0.67125Z"
+                    fill="#959DA5"
+                  />
+                </g>
+                <defs>
+                  <clippath id="clip0_1_1873">
+                    <rect
+                      width="18"
+                      height="18"
+                      fill="white"
+                      transform="translate(0 0.65625)"
+                    />
+                  </clippath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+          <li class="github">
+            <a href="#">
+              <svg
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_1_1876)">
+                  <path
+                    d="M10 0.65625C4.475 0.65625 0 5.13125 0 10.6562C0 15.0813 2.8625 18.8188 6.8375 20.1437C7.3375 20.2313 7.525 19.9312 7.525 19.6688C7.525 19.4312 7.5125 18.6438 7.5125 17.8062C5 18.2688 4.35 17.1938 4.15 16.6312C4.0375 16.3438 3.55 15.4562 3.125 15.2188C2.775 15.0312 2.275 14.5687 3.1125 14.5562C3.9 14.5437 4.4625 15.2812 4.65 15.5812C5.55 17.0938 6.9875 16.6688 7.5625 16.4062C7.65 15.7563 7.9125 15.3187 8.2 15.0687C5.975 14.8187 3.65 13.9563 3.65 10.1313C3.65 9.04375 4.0375 8.14375 4.675 7.44375C4.575 7.19375 4.225 6.16875 4.775 4.79375C4.775 4.79375 5.6125 4.53125 7.525 5.81875C8.325 5.59375 9.175 5.48125 10.025 5.48125C10.875 5.48125 11.725 5.59375 12.525 5.81875C14.4375 4.51875 15.275 4.79375 15.275 4.79375C15.825 6.16875 15.475 7.19375 15.375 7.44375C16.0125 8.14375 16.4 9.03125 16.4 10.1313C16.4 13.9688 14.0625 14.8187 11.8375 15.0687C12.2 15.3812 12.5125 15.9813 12.5125 16.9188C12.5125 18.2563 12.5 19.3312 12.5 19.6688C12.5 19.9312 12.6875 20.2437 13.1875 20.1437C15.1727 19.4736 16.8977 18.1977 18.1198 16.4958C19.3419 14.7938 19.9995 12.7515 20 10.6562C20 5.13125 15.525 0.65625 10 0.65625Z"
+                    fill="#959DA5"
+                  />
+                </g>
+                <defs>
+                  <clippath id="clip0_1_1876">
+                    <rect
+                      width="20"
+                      height="20"
+                      fill="white"
+                      transform="translate(0 0.65625)"
+                    />
+                  </clippath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
